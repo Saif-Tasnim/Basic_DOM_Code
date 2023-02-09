@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour DOM</title>
+    <link rel="stylesheet" href="style/style.css">
+    <style>
+        li{
+            color: tomato;
+            font-size: 22px;
+        }
+
+        #fruits-title{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome To My DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae dolorum asperiores autem consectetur? Reiciendis earum debitis suscipit, voluptatem perferendis ad quam, quidem ea cumque quibusdam exercitationem doloribus labore voluptas ipsam.</p>
+    </header>
+
+    <main>
+       <section>
+        <h1>My Awesome DOM de re baba</h1>
+        <ul>
+            <li>jalali set</li>
+            <li>Shafayet</li>
+            <li>Bonobash</li>
+        </ul>
+    
+       </section>
+
+       <section>
+        <h1 id="fruits-title">Fruits I Like</h1>
+        <ul>
+            <li>Apple</li>
+            <li>banana</li>
+            <li>Lichi</li>
+        </ul>
+       </section>  
+
+       <section>
+        <h1 >Places I Like Most</h1>
+        <ul>
+            <li class = "place-name">Chittagong</li>
+            <li class = "place-name">Bandarban</li>
+            <li class = "place-name">Khagrachari</li>
+        </ul>
+       </section>  
+
+    </main>
+
+    <script src="js/dem.js"></script>
+    <script> console.log("Hello From inside the index.html file") </script>
+    <script> console.log(document) </script>
+    <script> console.log(document.body.innerText) </script> -->
+    <script> console.log(document.getElementsByTagName('h1')) </script>
+   <!-- <script> console.log(document.getElementsByTagName('li')) </script>
+    <script> console.log(document.getElementsByTagName('ul')) </script>
+    <script> console.log(document.getElementsByTagName('ul')) </script> 
+     -->
+
+     <script>
+        console.log(document.getElementById('fruits-title'))
+        console.log(document.getElementById('fruits-title').innerText);
+        // document.getElementById('fruits-title').innerText = 'Fruits List';
+
+        console.log(document.getElementsByClassName('place-name'));
+        const classList = document.getElementsByClassName('place-name');
+
+        for (list of classList){
+            // console.log(list)
+            console.log(list.innerText)
+        }
+     </script>
+  
+    
+  
+</body>
+</html>
