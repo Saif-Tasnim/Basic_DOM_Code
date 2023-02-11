@@ -27,44 +27,47 @@
        <section>
         <h1>My Awesome DOM de re baba</h1>
         <ul>
-            <li>jalali set</li>
+            <li title="tooltip jalali">jalali set</li>
             <li>Shafayet</li>
             <li>Bonobash</li>
         </ul>
     
        </section>
 
-       <section>
+       <section id = "fruits">
         <h1 id="fruits-title">Fruits I Like</h1>
-        <ul>
-            <li>Apple</li>
-            <li>banana</li>
-            <li>Lichi</li>
+        <ul id="fruits-list">
+            <li id = "fruits-list1">Apple</li>
+            <li id = "fruits-list2">banana</li>
+            <li id = "fruits-list3">Lichi</li>
         </ul>
        </section>  
 
        <section>
         <h1 >Places I Like Most</h1>
         <ul>
-            <li class = "place-name">Chittagong</li>
+            <li id="tool" class = "place-name">Chittagong</li>
             <li class = "place-name">Bandarban</li>
-            <li class = "place-name">Khagrachari</li>
+            <li  class = "place-name">Khagrachari</li>
         </ul>
        </section>  
 
     </main>
 
-    <script src="js/dem.js"></script>
+    <!-- <script src="js/dem.js"></script>
     <script> console.log("Hello From inside the index.html file") </script>
     <script> console.log(document) </script>
-    <script> console.log(document.body.innerText) </script> -->
-    <script> console.log(document.getElementsByTagName('h1')) </script>
-   <!-- <script> console.log(document.getElementsByTagName('li')) </script>
+    <script> console.log(document.body.innerText) </script> 
+    <script> console.log(document.getElementsByTagName('h1')) </script> -->
+   
+   
+    <!-- <script> console.log(document.getElementsByTagName('li')) </script>
     <script> console.log(document.getElementsByTagName('ul')) </script>
-    <script> console.log(document.getElementsByTagName('ul')) </script> 
-     -->
+    <script> console.log(document.getElementsByTagName('ul')) </script>  -->
 
-     <script>
+  
+  
+    <!-- <script>
 
         // it is very important . Amra prochur prochur use korbo eta
         console.log(document.getElementById('fruits-title'))
@@ -80,10 +83,18 @@
             // console.log(list)
             console.log(list.innerText)
         }
-
         
-     </script>
+        document.getElementById('fruits-title').style.color = "blue";
+        // document.getElementById('fruits-title').style.textAlign = "center";
+        document.getElementById('fruits-title').style.fontSize = "48px";
+        document.getElementById('fruits-list1').style.listStyle="none";
+        document.getElementById('tool').setAttribute('title' , 'Ctg is my birth place');
+        
+     </script> -->
   
+
+     <script src="js/css_in_js.js"></script>
+     <script src="js/appned.js"></script>
     
   
 </body>
